@@ -1,0 +1,74 @@
+/*
+ Copyright 2023 Thomas
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menuBurger {
+    width: 100px;
+    height: 100px;
+}
+
+.bgHeader {
+    background-image: url("../img/bg_header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+/* Format téléphone */
+@media screen and (max-width: 400px) {
+    h1 {
+        display: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .menuBurger {
+        display: block;
+    }
+
+    .bgHeader {
+        width: 100%;
+        height: 100px;
+    }
+
+}
+
+/* Format tablette */
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    ul {
+        display: none;
+    }
+
+    .bgHeader {
+        background-image: url("../img/bg_footer.jpg");
+    }
+
+}
+
+/* Format ordinateur */
+@media screen and (min-width: 1001px) {
+    .menuBurger {
+        display: none;
+    }
+}
